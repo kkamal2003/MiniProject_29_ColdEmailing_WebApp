@@ -1,0 +1,12 @@
+body{
+    text-align:center;
+    margin:30px;
+    background: url("https://img.freepik.com/premium-photo/beautiful-colorful-background-vector-gradation-set-wallpaper-printable-template_515653-42.jpg") top /cover no-repeat;
+
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    
+}

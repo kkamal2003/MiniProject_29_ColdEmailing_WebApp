@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block one %}
+
+<div class="alert alert-info" role="alert">
+    <h1>Bulk Mail Logs</h1>
+    {% for log in log %}
+    {{ log }}<br>
+    {% endfor %}
+
+  </div>
+
+{% endblock one %}

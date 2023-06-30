@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block one %}
+<div class="container">
+  <h1>Cold Emailing</h1>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+      Senders Mail
+      <input type="email" class="form-control" name='senders_mail'required>
+    </div>
+
+    <div class="mb-3">
+      App Password
+      <input type="text" class="form-control" name='app_pass' required>
+    </div>
+
+    <div class="mb-3">
+      Senders Name
+      <input type="text" class="form-control" name='senders_name' required>
+    </div>
+    <div class="mb-3">
+      Message
+      <textarea class="form-control" name='message' rows="4" cols="50" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      Subject
+      <input type="text" class="form-control" name='subject' required>
+    </div>
+
+    <div class="mb-3">
+      FILE
+      <input type="file" class="form-control"  name='file' required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock one %}
+
